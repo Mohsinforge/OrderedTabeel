@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Active Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title and Dark Mode Toggle in Header -->
+        <div class="header">
+            <h1>Most Active Users</h1>
+            <button id="darkModeToggle" class="mode-toggle">🌙 Dark Mode</button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrapper">
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th data-sort="name">Name ⇵</th>
+                        <th data-sort="email">Email ⇵</th>
+                        <th data-sort="username">Username ⇵</th>
+                        <th data-sort="country">Country ⇵</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Simple Pagination at Bottom -->
+        <div class="simple-pagination">
+            <button id="prevBtn" class="arrow-btn" disabled>‹</button>
+            <span class="page-num" id="pageNum">1</span>
+            <button id="nextBtn" class="arrow-btn">›</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
